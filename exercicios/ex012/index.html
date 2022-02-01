@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Vídeos</h1>
+    <p>Agora vamos aprender a inserir Vídeos no H.T.M.L.5</p>
+    <video src="midia/pao-de-queijo.mp4" width="300" controls loop></video>
+
+    <h1>Para funcionar em varios navegadores diferentes.</h1>
+
+    <video width="300" poster="imagens/imagem.png" controls>
+        <source src="midia/pao-de-queijo.mp4" type="video/mp4">
+        <source src="midia/pao-de-queijo.m4v" type="video/m4v">
+        <source src="midia/pao-de-queijo.webm" type="video/webm">
+        <source src="midia/pao-de-queijo.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com preodutor de vídeos.</p>
+    </video>
+    <!--Lembrar da ordem, ela influencia sempre do primeiro video até reproduzir.-->
+
+    <h1>Colocando video do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ry4XN_xpEKg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Peguei de outro site.</h1>
+    <iframe loading="lazy" title="YouTube video player" src="https://www.youtube.com/embed/Ry4XN_xpEKg" width="560" height="315" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+    <h1>Colocando pelo Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/189685274?h=39aec995ac" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

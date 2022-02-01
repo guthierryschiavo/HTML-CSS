@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: #AAF5B0;
+        }
+
+        h1{
+            color: #1A361B;
+        }
+
+        #principal{
+            text-align:center;
+            background-color:rgb(4, 134, 0);
+            color:white;
+        }
+
+        h2{
+            color: #39753A;
+        }
+
+        .basico{
+            color:#0076F5 ;
+        }
+
+        .inter{
+            color: #94A808;
+        }
+
+        .avancado{
+            color:#F52818;
+        }
+
+        .teste{
+            text-decoration:underline;
+            color:red; /*Essa cor não vai, porque a ID já está como branco e ela é de maior hierarquia que o class.*/
+        }
+    </style>
+</head>
+<body>
+    <h1 id="principal" class="teste">Criando Sites com HTML</h1>
+    <h1>Aprendendo HTML</h1>
+        <h2 class="basico">HTML Básico</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laboriosam tempora repellat <span class="basico">beatae quod mollitia</span> nihil hic sint, at autem dicta dolore molestias earum totam asperiores deleniti doloribus itaque quas.</p>
+        <h2 class="inter">HTML intermediario</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laboriosam tempora repellat beatae quod mollitia nihil hic sint, at autem dicta dolore molestias earum totam asperiores deleniti doloribus itaque quas.</p>
+        <h2 class="avancado">HTML avancado</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laboriosam tempora repellat beatae quod mollitia nihil hic sint, at autem dicta dolore molestias earum totam asperiores deleniti doloribus itaque quas.</p>
+    <h1>Aprendendo CSS</h1>
+        <h2 class="basico">CSS básico</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laboriosam tempora repellat beatae quod mollitia nihil hic sint, at autem dicta dolore molestias earum totam asperiores deleniti doloribus itaque quas.</p>
+        <h2 class="inter">CSS intermediario</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laboriosam tempora repellat beatae quod mollitia nihil hic sint, at autem dicta dolore molestias earum totam asperiores deleniti doloribus itaque quas.</p>
+        <h2 class="avancado">CSS Avançado</h2><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum laboriosam tempora repellat beatae quod mollitia nihil hic sint, at autem dicta dolore molestias earum totam asperiores deleniti doloribus itaque quas.</p>
+</body>
+</html>

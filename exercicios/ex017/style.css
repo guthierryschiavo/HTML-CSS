@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    /* quando tem 3 fonts se chama fontes combinadas, ele vai da primeira até a 3ª fonte, primeiro a Arial, dps Helvetica, dps Sans-serif para ver qual o site aceita */
+
+
+    /* Medidas Absolutas
+
+    cm, mm, in, px, pt, pc
+
+    Medidas Relativas
+
+    em (altura M da fonte), ex ( altura X da fonte ), rem, vw (Largura da ViewPort ( tamanho da tela) ), vh, %
+
+        16px = 1em
+
+    RECOMENDAÇÃO DA W3C usar Px e Em.
+    */
+/*
+    font-size: 16px ;
+    font-weight:lighter;
+    font-style: italic;
+    text-decoration: underline; 
+
+*/
+    /* pesos: lighter - normal - bold -bolder;
+    Também da para colocar com numeração de 100 a 900.
+    -wight - peso 
+    -widht - altura 
+    */
+
+
+    /* Também é possivel fazer um SHORTHAND usando a tag: 
+        font: font-style -> font-weight -> font-size -> font-family 
+    Isso possibilita a diminuir a quantidade de tags. E sempre tem que ser seguindo a ordem. Olhe no h1 como vai ficar.*/
+}
+
+h1{
+    font: italic bolder 3em arial;
+
+    /* 
+       font-style: italic;
+       Font-weight: bolder;
+       font-size: 3em;
+       font-family: arial;
+    */
+}
+
+h2{
+    font: italic 2em arial;
+}

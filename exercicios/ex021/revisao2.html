@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        header{
+            background-color: white;
+
+            border-radius:20px;
+            border-style:solid;
+            border-color:black;
+            border-width:2px;
+
+            padding-top:7px; /* Para dar espaço ao h1 da borda.*/
+        }
+        h1{
+            background-color: blue;
+            color:white;
+            text-align: center;
+
+            font-weight:normal; /*Remover negrito*/
+            font-style: italic; /*Colocar italico*/
+
+            width: 300px;
+            margin: auto;
+            
+
+            padding-top:5px;
+            padding-bottom:5px;
+
+            border-radius: 15px;
+        }
+        nav{
+            text-align: center;
+
+            margin-top:10px;
+
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+
+        a{
+            background-color: blue;
+            color: white;
+
+            text-align: justify;
+            text-decoration: none;  
+
+            padding-left: 50px;
+            padding-right: 50px;
+
+            border-radius: 10px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: red;
+        }
+        
+        a:hover{
+            background-color: greenyellow;
+            color:black;
+        }
+        main{
+            background-color: white;
+
+            border-radius:20px;
+            border-style:solid;
+            border-color:black;
+            border-width:2px;
+
+            margin-top: 15px;
+
+        }
+
+        h2{
+            text-align:center;
+        }
+
+        #noticias > .titulo1{
+            text-align: left;
+            font-style: italic;
+            padding-left: 7px;
+        
+        }
+        p{
+            text-align: justify;
+
+            padding-left: 7px;
+            padding-right: 7px;
+            text-indent: 1em;
+        }
+        aside > p {
+            text-align: right;
+            font-weight: bolder;
+        }
+
+        footer{
+            background-color: black;
+        }
+
+        footer>p{
+            text-align: center;
+            font-weight:bold;
+            color: white;
+            
+            padding-top: 3px;
+            padding-bottom: 3px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cabeçalho: Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Conteúdo principal</h2>
+
+            <article id="noticias">
+                <h2 class="titulo1">Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia beatae cupiditate aliquid fugit officiis commodi doloremque iusto nostrum vel obcaecati ducimus alias voluptatem inventore minima, rerum ea aperiam culpa dolore. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consequatur quae ratione quisquam necessitatibus nesciunt itaque neque iure! Iste recusandae necessitatibus, voluptate modi inventore obcaecati laudantium cumque. Eum, impedit eos.</p>
+                <aside> 
+                    <p>Artigo escrito por José banguelo</p>
+                </aside>
+            </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Guthierry Schiavo Lima</p>
+    </footer>
+</body>
+</html>
