@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            position:relative; /*por padrão já é relativo, porem só esta destacando que é.*/
+
+            height: 95vh;
+            padding: 10px;
+            background-color: purple;
+        }
+
+        #conteudo{
+            background-image: url("imagens/target001.png");
+            background-size: 100% 100%;
+            background-color: yellow;
+
+            /*quando coloca o absolute, da para mexer em 2 tags, o left e top*/
+
+            position:absolute; 
+            left:50%;
+            top:50%;
+
+
+            height: 200px;
+            width: 400px;
+
+            transform: translate(-50%, -50%);
+            /* quando se usa valores positivos, o 1ª vai para a direita 2ª vai para baixo. 
+            Quando se usa valores negativos, o 1ª vai para a esquerda 2ª vai para cima.*/
+            
+
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>
