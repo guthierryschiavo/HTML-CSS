@@ -11,7 +11,7 @@
     --font-titulo: 'Passion One';
 }
 body{
-    background-color: black;
+    background-color: pink;
     
 }
 header{
@@ -46,24 +46,27 @@ header{
     text-align: center;
 }
 
-div#fundo1{
-    width: 98.9vw;
+#fundo1{
+    
     background-image: url('imagens/background001.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: right center;
+    padding:50px 0px 50px 30px;
 }
-div#fundo2{
-    width: 98.9vw;
+
+#fundo2{
+    
     background-image: url('imagens/background002.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment:fixed;
-    
-
+    background-position: center center;
+    padding:30px;
 }
-#paragrafo1{
+
+.paragrafo1{
     background-color: white;
     padding-bottom:150px;
     padding-top: 100px;
@@ -71,11 +74,11 @@ div#fundo2{
     box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.37);
 }
 
-#paragrafo2{
-    background-color:rgba(0, 0, 0, 0.376);
+.paragrafo2{
+    background-color:rgba(0, 0, 0, 0.623);
     color:white;
-    width: 700px;
-    margin:30px; /*tá fazendo ficar um fundo preto na segunda imagem.*/
+    width: 45vw;
+    padding-left: 15px;
     
 }
 
@@ -87,8 +90,6 @@ li{
     line-height: 2em;
     list-style-type: none;
 }
-
-
 
 footer{
     background-color: black;
