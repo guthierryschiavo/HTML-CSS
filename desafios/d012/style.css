@@ -6,23 +6,28 @@
     margin: 0px;
     padding: 0px;
 }
+
 :root{
     --font-texto: 'Sriracha';
     --font-titulo: 'Passion One';
 }
+
 body{
     background-color: pink;
     
 }
+
 header{
     padding: 60px 0px 50px 0px;
     
 }
+
 header>h1{
     font-family: var(--font-titulo);
     font-size: 10vw;
     font-variant: small-caps; /*não sabia, deveras interessante*/
 }
+
 header>p{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -33,6 +38,7 @@ a{
     font-size: 1em;
     font-weight: bold;
 }
+
 a:hover{
     color:white;
     text-decoration: underline;
