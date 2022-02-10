@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position:relative;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: grey;
+            color:white;
+        }
+        thead > tr > th{
+            position:sticky;
+            top:0;
+            background-color: gray;
+        }
+        .num{
+            text-align: right;
+            
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding:10px;
+            background-color: rgb(197, 193, 193);
+        }
+        /*Para efeito zebrado, usa o elemento :nth-child(xn) 
+        x       = numeros
+        even    = par
+        odd     = impar
+        Também pode se usar 2 no mesmo elemento, para colorir a tabela.*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+<!--
+    ANATOMIA PARA TABELAS GRANDES 
+    TABLE - Semanticamente
+        CAPTION = legenda/titulo da tabela
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    
+    scope = é importante para o google saber analizar a tabela, e é bastante importante.
+-->
+
+<table>
+    <caption>População das Unidades Federativas</caption>
+    <thead>
+        <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 100px; ">População</th>
+            <!-- é col por que os dados estão abaixo do titulo-->
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 102 210</td>
+            
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">62 204 021</td>
+        </tr>
+        <tr>
+            <td>Parana</td>
+            <td class="num">52 414 521</td>
+        </tr>
+        <tr>
+            <td>Rio Grande do Sul</td>
+            <td class="num">32 624 111</td>
+        </tr>
+        <tr>
+            <td>Mato Grosso</td>
+            <td class="num">142 224 221</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+        <tr>
+            <td>Teste</td>
+            <td class="num">111 222 333</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th scope="row">Total de Habitantes</td> <!--Titulo e não dado, então se usa e TH-->
+                <!-- Row = pois o dado esta na linha da frente e não em baixo.-->
+            <td><strong>325 251 478</strong></td>
+        </tr>
+    </tfoot>
+   
+</table>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio eius, sint minima recusandae cupiditate ratione sequi architecto soluta voluptatem enim veniam optio facilis eveniet laboriosam iste nostrum. Modi, eius iusto.
+    <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus animi, facilis consequatur eius sed earum magni harum nostrum nulla est quos distinctio obcaecati tempore et. Ut porro aliquam sit.
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident repudiandae, nemo iusto temporibus aut ullam est corrupti. Deserunt tenetur inventore, aperiam facilis omnis praesentium possimus mollitia, provident vitae fuga dolore?
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo iusto cupiditate perferendis cumque. Vel, doloribus velit? Rem, perspiciatis ut praesentium cum, illo reprehenderit temporibus distinctio ratione hic vitae esse!
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, omnis ipsa, iure aspernatur provident qui aliquid rem, exercitationem aut repellendus doloremque? Aperiam et numquam ad dolore voluptates facilis expedita dicta.
+    <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus animi, facilis consequatur eius sed earum magni harum nostrum nulla est quos distinctio obcaecati tempore et. Ut porro aliquam sit.
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident repudiandae, nemo iusto temporibus aut ullam est corrupti. Deserunt tenetur inventore, aperiam facilis omnis praesentium possimus mollitia, provident vitae fuga dolore?
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo iusto cupiditate perferendis cumque. Vel, doloribus velit? Rem, perspiciatis ut praesentium cum, illo reprehenderit temporibus distinctio ratione hic vitae esse!
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, omnis ipsa, iure aspernatur provident qui aliquid rem, exercitationem aut repellendus doloremque? Aperiam et numquam ad dolore voluptates facilis expedita dicta.
+    <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus animi, facilis consequatur eius sed earum magni harum nostrum nulla est quos distinctio obcaecati tempore et. Ut porro aliquam sit.
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident repudiandae, nemo iusto temporibus aut ullam est corrupti. Deserunt tenetur inventore, aperiam facilis omnis praesentium possimus mollitia, provident vitae fuga dolore?
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo iusto cupiditate perferendis cumque. Vel, doloribus velit? Rem, perspiciatis ut praesentium cum, illo reprehenderit temporibus distinctio ratione hic vitae esse!
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, omnis ipsa, iure aspernatur provident qui aliquid rem, exercitationem aut repellendus doloremque? Aperiam et numquam ad dolore voluptates facilis expedita dicta.
+    <br>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus animi, facilis consequatur eius sed earum magni harum nostrum nulla est quos distinctio obcaecati tempore et. Ut porro aliquam sit.
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident repudiandae, nemo iusto temporibus aut ullam est corrupti. Deserunt tenetur inventore, aperiam facilis omnis praesentium possimus mollitia, provident vitae fuga dolore?
+    <br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nemo iusto cupiditate perferendis cumque. Vel, doloribus velit? Rem, perspiciatis ut praesentium cum, illo reprehenderit temporibus distinctio ratione hic vitae esse!
+    <br>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error, omnis ipsa, iure aspernatur provident qui aliquid rem, exercitationem aut repellendus doloremque? Aperiam et numquam ad dolore voluptates facilis expedita dicta.
+</p>
+</body>
+</html>
